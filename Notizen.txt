@@ -1,0 +1,9 @@
+Ansible Demo
+
+Start von e:\development_synced\12_Lidl_Workshop\vagrant-ansible-demo
+
+vagrant up
+vagrant ssh
+
+cd provisioning
+sudo ansible-playbook -i inventory site.yml

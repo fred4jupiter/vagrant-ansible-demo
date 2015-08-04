@@ -1,0 +1,5 @@
+---
+
+- name: Install Open JDK
+  sudo: yes
+  apt: name=openjdk-7-jre state=present update_cache=yes
