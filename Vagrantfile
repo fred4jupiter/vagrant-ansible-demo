@@ -40,9 +40,4 @@ Vagrant.configure(2) do |config|
   config.ssh.shell = "bash -c 'BASH_ENV=/etc/profile exec bash'"
   config.vm.provision "shell", path: "ansible-setup.sh"
   config.vm.provision "file", source: "provisioning", destination: "/home/vagrant/provisioning"
-  
-  config.vm.provision "shell", inline: <<-SHELL
-      apt-get update
-      apt-get install -y nano git      
-  SHELL
-  end
+end
